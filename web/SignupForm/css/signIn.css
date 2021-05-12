@@ -1,0 +1,11 @@
+#form-signIn {
+  background-image: url("../img/ocean.jpg");
+  background-size: cover;
+}
+.form {
+  width: 30%;
+}
+.logo {
+  transform: scale(0.5);
+  margin-left: 20px;
+}

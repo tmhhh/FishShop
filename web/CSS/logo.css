@@ -1,0 +1,95 @@
+.logo {
+  display: flex;
+  z-index: 1;
+}
+.logo .image-Logo {
+  width: 100px;
+  height: 100px;
+
+  background-image: url("../img/CoolFish.jpg");
+  background-size: cover;
+  border-radius: 20px;
+  box-shadow: 5px 5px rgb(0, 0, 0);
+}
+.logo .brand {
+  position: relative;
+}
+.logo .brand h1 {
+  position: absolute;
+  top: 20px;
+  left: 10px;
+  font-size: 60px;
+  font-family: cursive;
+  font-weight: bolder;
+}
+.logo .brand h1:nth-child(1) {
+  color: #ffff00;
+  -webkit-text-stroke: 0.5px black;
+}
+
+.logo .brand h1:nth-child(2) {
+  /* background-image: linear-gradient(
+    to left,
+    violet,
+    indigo,
+    blue,
+    green,
+    yellow,
+    orange,
+    red
+  ); */
+  background-color: #f9a825;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  animation: animate infinite 3s ease-in-out;
+}
+@keyframes animate {
+  0%,
+  100% {
+    clip-path: polygon(
+      0% 51%,
+      7% 44%,
+      15% 40%,
+      25% 39%,
+      32% 43%,
+      38% 48%,
+      44% 53%,
+      50% 58%,
+      56% 60%,
+      62% 59%,
+      69% 57%,
+      74% 52%,
+      79% 45%,
+      84% 40%,
+      90% 34%,
+      95% 29%,
+      100% 23%,
+      100% 99%,
+      0% 99%
+    );
+  }
+  50% {
+    clip-path: polygon(
+      0% 51%,
+      6% 57%,
+      15% 61%,
+      24% 57%,
+      31% 52%,
+      38% 44%,
+      45% 39%,
+      50% 34%,
+      57% 32%,
+      64% 33%,
+      71% 38%,
+      78% 43%,
+      83% 49%,
+      88% 56%,
+      91% 64%,
+      95% 72%,
+      100% 78%,
+      100% 99%,
+      0% 99%
+    );
+  }
+}
